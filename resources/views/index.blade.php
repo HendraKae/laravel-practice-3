@@ -431,8 +431,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next btn-next"></div>
-                        <div class="swiper-button-prev btn-prev"></div>
+                    </div>
+                    <div class="swiper-button-next btn-next">
+                        <img src="{{ url('/assets/images/landing/arrow-right.png') }}" />
+                    </div>
+                    <div class="swiper-button-prev btn-prev">
+                        <img src="{{ url('/assets/images/landing/arrow-left.png') }}" />
                     </div>
                 </div>
             </div>
