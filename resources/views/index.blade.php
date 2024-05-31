@@ -42,7 +42,7 @@
             </div>
             <div class="nav-button">
                 <button class="btn-login">Login</button>
-                <button class="btn-demo">Get Demo</button>
+                <button class="btn-demo" >Get Demo</button>
             </div>
         </nav>
         
