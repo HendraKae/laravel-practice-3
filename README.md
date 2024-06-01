@@ -9,7 +9,7 @@
 
 ## How to use this project
 
-This website is a Frontend project developed using Laravel 11 and SASS. With Blade and SCSS, the website contains hero sections, benefits, how it works, productivity, User words, price, downloads, footer. This website is a test from FE.
+This website is a Frontend project developed using Laravel 11 and SASS. With Blade and SCSS, the website contains hero sections, benefits, how it works, productivity, User words, pricing, downloads, footer and there is also a dashboard section. This website is a test from FE.
 
 Here are a few tips on how to use this project :
 
@@ -23,3 +23,5 @@ Here are a few tips on how to use this project :
 -   $ npm run build
 -   $ npm run dev
 -   $ php artisan serve
+
+To enter the dashboard, type http://127.0.0.1:8000/dashboard
