@@ -55,7 +55,7 @@
             <img class="bg4" src="{{ url('/assets/images/landing/hero-bg-4.png') }}" />
             <div class="main">
                <h1>All your business <br/>expenses in one place.</h1>
-                <p>Yourone-stop finance empower platform. <br/> Manage all your business expenses with our supafast app.</p> 
+                <p>Your one-stop finance empower platform. <br/>Manage all your business expenses with our supafast app. </p> 
                 <div class="cta">
                     <button class="btn-demo">Get a Free Demo</button>
                     <button class="btn-pricing">See Pricing</button>
@@ -105,7 +105,7 @@
                 <div class="benefits">
                     <div class="row">
                         <div class="img">
-                            <img src="{{ url('/assets/images/landing/icon1-benefit2.png') }}" />
+                            <img src="{{  url('/assets/images/landing/icon1-benefit2.png') }}" />
                         </div>
                         <div class="text">
                             <h2>Automatic Invoice Payment</h2>
@@ -174,7 +174,7 @@
         <section class="works">
             <img class="bg1" src="{{ url('/assets/images/landing/hero-bg-1.png') }}" />
             <div class="container">
-                <img src="{{ url('/assets/images/landing/works-img.png') }}" />
+                <img class="img-content" src="{{ url('/assets/images/landing/works-img.png') }}" />
                 <div class="wrapper">
                     <div class="header">
                         <h2>HOW IT WORKS</h2>
@@ -184,16 +184,16 @@
                     <div class="content">
                         <div class="steps">
                             <img class="line" src="{{ url('/assets/images/landing/line.png') }}" />
-                            <h1 class="h1">1</h1>
+                            <h1 class="h1 number1">1</h1>
                             <p class="text">Register your Spend.In account.</p>
                         </div>
                         <div class="steps">
-                            <h1 class="h1 number1">2</h1>
+                            <h1 class="h1 number2">2</h1>
                             <p class="text txtwo">Fill in the list of your business expenses.</p>
                         </div> 
                         <div class="steps">
                             <img class="line two" src="{{ url('/assets/images/landing/line2.png') }}" />
-                            <h1 class="h1 number2">3</h1>
+                            <h1 class="h1 number3">3</h1>
                             <p class="text txthree">Done, let’s continue the work.</p>
                         </div> 
                     </div>    
@@ -498,7 +498,7 @@
                     </div>
                     <button>Get your Free Plan</button>
                 </div>
-                <div class="container-free">
+                <div class="container-pro">
                     <div class="title">
                         <div>
                             <img src="{{ url('/assets/images/landing/crown.png') }}" />
@@ -537,7 +537,7 @@
                     </div>
                     <button>Get Started</button>
                 </div>
-                <div class="container-free">
+                <div class="container-ultimate">
                     <div class="title">
                         <div>
                             <img src="{{ url('/assets/images/landing/share.png') }}" />

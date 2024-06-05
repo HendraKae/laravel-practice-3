@@ -5,8 +5,8 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: none;
     border: none;
+    outline: none;
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -33,6 +33,7 @@ body {
     transition: all 0.3s ease-in-out;
 
     .brand {
+        padding-right: 3%;
         img {
             width: 144px;
             height: 32px;
@@ -46,7 +47,7 @@ body {
                 position: relative;
                 a {
                     display: block;
-                    padding: 0.5rem 1rem;
+                    padding: 0.6rem 1rem;
                     color: #fff;
                     text-decoration: none;
                     text-align: center;
@@ -103,6 +104,10 @@ body {
             color: #fff;
             border-radius: 50px;
             cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+                background-color: $hover-btn;
+            }
         }
     }
 }
@@ -114,61 +119,63 @@ body {
 // hero
 
 .hero {
-    height: 148vh;
+    height: 146.8vh;
     width: 100%;
     padding: 0 9%;
     background-color: $bg;
     display: flex;
     justify-content: center;
+    position: relative;
 
     .bg2 {
         position: absolute;
         right: 0;
         z-index: 0;
+        top: -5%;
     }
 
     .bg1 {
         position: absolute;
         left: 0;
         z-index: 0;
+        top: -5%;
     }
     .bg3 {
         position: absolute;
         left: 0;
-        bottom: -47%;
+        bottom: -2%;
         z-index: 0;
     }
     .bg4 {
         position: absolute;
         right: 0;
-        bottom: -47%;
+        bottom: -2%;
         z-index: 0;
     }
     .main {
-        padding-top: 17%;
+        padding-top: 16.5%;
         h1 {
             font-size: 72px;
             font-weight: 700;
-            line-height: 108px;
-            letter-spacing: -0.03em;
+            line-height: 95px;
+            letter-spacing: -0.05em;
             text-align: center;
-
             color: #fff;
         }
 
         p {
-            padding-top: 3%;
-            color: #596780;
+            padding-top: 2.5%;
             font-size: 24px;
             font-weight: 400;
             text-align: center;
-            line-height: 36px;
+            line-height: 35px;
+            color: #596780;
         }
 
         .cta {
             display: flex;
             justify-content: center;
-            padding-top: 6%;
+            padding: 5.5% 0 0 0;
             gap: 24px;
             z-index: 1;
             position: relative;
@@ -182,6 +189,10 @@ body {
                 border-radius: 30px;
                 border: none;
                 cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: $hover-btn;
+                }
             }
 
             .btn-pricing {
@@ -198,7 +209,7 @@ body {
     }
     .hero-dashboard {
         position: absolute;
-        bottom: -48%;
+        bottom: 0%;
         width: 83%;
         height: auto;
     }
@@ -207,7 +218,7 @@ body {
 // benefit
 
 .benefit {
-    height: 130vh;
+    height: 994px;
     width: 100%;
     padding: 120px 9%;
     background-color: #fff;
@@ -220,7 +231,8 @@ body {
                 color: $primary;
                 font-size: 20px;
                 font-weight: 600;
-                padding-bottom: 20px;
+                line-height: 30px;
+                letter-spacing: -0.02em;
             }
 
             h1 {
@@ -228,6 +240,7 @@ body {
                 font-weight: 700;
                 line-height: 60px;
                 color: #040815;
+                letter-spacing: -0.02em;
             }
         }
 
@@ -237,12 +250,13 @@ body {
             font-weight: 400;
             line-height: 30px;
             color: #596780;
+            letter-spacing: -0.02em;
         }
     }
     .content {
         display: flex;
-        justify-content: space-between;
-        gap: 10px;
+        justify-content: center;
+        gap: 24px;
         align-items: center;
 
         .card {
@@ -250,21 +264,23 @@ body {
             width: 384px;
             height: 528px;
             img {
-                width: 380px;
-                height: 384px;
+                width: 364px;
+                height: 364px;
             }
             h1 {
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 600;
                 color: #040815;
                 line-height: 36px;
                 padding: 20px 0 10px 0;
+                letter-spacing: -0.03em;
             }
             p {
                 font-size: 16px;
                 font-weight: 400;
                 color: #596780;
                 line-height: 24px;
+                letter-spacing: -0.02em;
             }
         }
     }
@@ -273,7 +289,7 @@ body {
 // benefit 2nd
 
 .benefit2 {
-    height: 120vh;
+    height: 850px;
     width: 100%;
     padding: 120px 9%;
     background-color: #fff;
@@ -284,6 +300,7 @@ body {
             font-weight: 600;
             color: $primary;
             line-height: 30px;
+            letter-spacing: -0.02em;
         }
         h1 {
             font-size: 40px;
@@ -291,17 +308,20 @@ body {
             color: #040815;
             line-height: 60px;
             padding: 5px 0 15px;
+            letter-spacing: -0.03em;
         }
         p {
             font-size: 20px;
             font-weight: 400;
             color: #596780;
             line-height: 30px;
+            letter-spacing: -0.02em;
         }
     }
     .content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 125px;
 
         .benefits {
             padding-top: 77px;
@@ -310,28 +330,34 @@ body {
                 padding-bottom: 44px;
                 display: flex;
                 gap: 32px;
-                img {
-                    width: 50px;
-                    height: auto;
+                .img {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
                 }
                 .text {
                     h2 {
-                        font-size: 24px;
+                        font-size: 22px;
                         font-weight: 600;
                         color: #040815;
-                        padding-bottom: 12px;
+                        padding-bottom: 10px;
+                        letter-spacing: -0.02em;
                     }
                     p {
-                        font-size: 16px;
+                        font-size: 15px;
                         font-weight: 400;
                         color: #596780;
                         line-height: 24px;
+                        letter-spacing: -0.02em;
                     }
                 }
             }
         }
         .img-benefit2nd {
             padding-top: 55px;
+            width: 558px;
+            height: 433px;
         }
     }
 }
@@ -339,7 +365,7 @@ body {
 // work
 
 .work {
-    height: 119vh;
+    height: 890px;
     width: 100%;
     padding: 0 9%;
     background-color: $bg;
@@ -362,6 +388,7 @@ body {
             font-weight: 600;
             color: $primary;
             line-height: 30px;
+            letter-spacing: -0.02em;
         }
         h1 {
             font-size: 40px;
@@ -369,12 +396,14 @@ body {
             color: #ffffff;
             line-height: 60px;
             padding: 5px 0 15px;
+            letter-spacing: -0.03em;
         }
         p {
             font-size: 20px;
             font-weight: 400;
             color: #90a3bf;
             line-height: 30px;
+            letter-spacing: -0.02em;
         }
     }
     .content {
@@ -385,9 +414,10 @@ body {
             gap: 173px;
             padding-bottom: 64px;
             .col {
+                position: relative;
                 .h1 {
                     position: absolute;
-                    top: 38.2%;
+                    top: -10%;
                     border: 6px solid #0d121f;
                     font-size: 24px;
                     font-weight: 600;
@@ -396,14 +426,10 @@ body {
                     border-radius: 50%;
                     background-color: $primary;
                 }
-                .hcol1 {
-                    left: 17.2%;
-                }
-                .hcol2 {
-                    left: 41.8%;
-                }
+                .hcol1,
+                .hcol2,
                 .hcol3 {
-                    right: 30.4%;
+                    left: -14%;
                 }
 
                 img {
@@ -417,6 +443,7 @@ body {
                     color: #fff;
                     text-align: center;
                     line-height: 30px;
+                    letter-spacing: -0.02em;
                 }
             }
         }
@@ -424,22 +451,29 @@ body {
             display: flex;
             justify-content: center;
             gap: 16px;
+
             .btn-demo {
                 font-size: 16px;
                 font-weight: 600;
                 color: #fff;
                 background-color: $primary;
-                padding: 13px 24px;
+                padding: 15px 24px;
                 border-radius: 30px;
                 cursor: pointer;
+                letter-spacing: -0.02em;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: $hover-btn;
+                }
             }
             .btn-pricing {
                 font-size: 16px;
                 font-weight: 600;
                 color: #c3d4e9;
                 background-color: $secondary;
-                padding: 13px 24px;
+                padding: 15px 24px;
                 border-radius: 30px;
+                letter-spacing: -0.02em;
                 cursor: pointer;
             }
         }
@@ -449,7 +483,7 @@ body {
 // works
 
 .works {
-    height: 107vh;
+    height: 776px;
     width: 100%;
     padding: 0 9%;
     background-color: $bg;
@@ -467,7 +501,12 @@ body {
         display: flex;
         justify-content: center;
         padding: 120px 9%;
-        gap: 100px;
+        gap: 70px;
+        .img-content {
+            width: 558px;
+            height: 506px;
+        }
+
         .wrapper {
             .header {
                 padding-bottom: 32px;
@@ -475,38 +514,42 @@ body {
                     font-size: 20px;
                     font-weight: 600;
                     color: $primary;
+                    letter-spacing: -0.02em;
                 }
                 h1 {
                     font-size: 40px;
                     font-weight: 700;
                     color: #fff;
-                    padding: 24px 0 28px 0;
+                    padding: 22px 0 26px 0;
+                    letter-spacing: -0.03em;
                 }
                 p {
                     font-size: 20px;
                     font-weight: 400;
                     color: #90a3bf;
                     line-height: 30px;
+                    letter-spacing: -0.02em;
                 }
             }
             .content {
                 background-color: $secondary;
                 width: 540px;
-                height: 290px;
+                height: 268px;
                 border-radius: 12px;
-                padding: 32px 0 0 32px;
+                padding: 25px 0 0 32px;
+                position: relative;
                 .line {
                     position: absolute;
-                    left: 58.58%;
-                    top: 57%;
                     z-index: 1;
+                    top: 23%;
+                    left: 10%;
                 }
                 .two {
                     z-index: 0;
                 }
                 h1 {
                     position: absolute;
-                    font-size: 24px;
+                    font-size: 22px;
                     font-weight: 600;
                     color: #fff;
                     padding: 11px 18px;
@@ -515,18 +558,22 @@ body {
                     z-index: 2;
                 }
                 .number1 {
-                    top: 61.5%;
+                    top: 10%;
                 }
                 .number2 {
-                    top: 72.5%;
+                    top: 42%;
+                }
+                .number3 {
+                    bottom: 10%;
                     color: $secondary;
                     background-color: #fff;
                 }
                 .text {
                     padding: 13px 0 0 70px;
-                    font-size: 20px;
+                    font-size: 19px;
                     font-weight: 500;
                     color: #fff;
+                    letter-spacing: -0.02em;
                 }
                 .txtwo {
                     padding-top: 62px;
@@ -542,14 +589,14 @@ body {
 // stories
 
 .stories {
-    height: 125vh;
+    height: 900px;
     padding: 120px 9%;
     .header {
         h2 {
             font-size: 20px;
             font-weight: 600;
             color: $primary;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.02em;
         }
         h1 {
             padding-top: 15px;
@@ -612,6 +659,7 @@ body {
                     font-size: 24px;
                     font-weight: 700;
                     padding: 40px 0 34px 0;
+                    letter-spacing: -0.03em;
                 }
                 .row {
                     display: flex;
@@ -639,7 +687,7 @@ body {
 // stories2nd
 
 .stories2nd {
-    height: 125vh;
+    height: 900px;
     padding: 120px 9%;
     .header {
         h2 {
@@ -660,6 +708,7 @@ body {
     .content {
         display: flex;
         justify-content: space-between;
+
         .wrapper {
             padding: 64px 0 0 0;
             .btn-box {
@@ -736,7 +785,7 @@ body {
 //testimonial
 
 .testimonial {
-    height: 134vh;
+    height: 967px;
     width: 100%;
     padding: 0 9%;
     background-color: $bg;
@@ -792,11 +841,12 @@ body {
                                     color: #fff;
                                 }
                                 p {
-                                    font-size: 16px;
+                                    font-size: 15px;
                                     font-weight: 500;
                                     color: #fff;
                                     padding: 16px 0 34px 0;
                                     line-height: 24px;
+                                    letter-spacing: -0.02em;
                                 }
                             }
                             .hr {
@@ -851,24 +901,28 @@ body {
             }
             .btn-next,
             .btn-prev {
-                color: $primary;
                 width: 50px;
                 height: 50px;
-                background-color: $primary;
+                background-color: #1a202c;
+                color: #1a202c;
                 border-radius: 50%;
                 top: 90%;
+                transition: 0.3s ease;
                 img {
                     position: absolute;
+                }
+
+                &:hover {
+                    background-color: $primary;
+                    color: $primary;
+                    box-shadow: 4px 8px 20px 1px #246bfd40;
                 }
             }
             .btn-next {
                 right: 45%;
-                box-shadow: 4px 8px 20px 1px #246bfd40;
             }
             .btn-prev {
                 left: 45%;
-                background-color: #1a202c;
-                color: #1a202c;
             }
         }
     }
@@ -877,7 +931,7 @@ body {
 // pricing
 
 .pricing {
-    height: 173vh;
+    height: 1249px;
     background-color: #fff;
     padding: 120px 9%;
     position: relative;
@@ -961,15 +1015,22 @@ body {
     }
     .content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         gap: 40px;
         padding: 24px 0 120px 0;
-        .container-free {
+        .container-free,
+        .container-pro,
+        .container-ultimate {
             background-color: #f3f5f7;
             width: 384px;
             height: 710px;
             padding: 32px;
             border-radius: 12px;
+            transition: 0.5s ease;
+            &:hover {
+                transform: scale(1.01);
+                box-shadow: 2px 2px 10px rgba(26, 32, 44, 0.068);
+            }
             .title {
                 display: flex;
                 gap: 12px;
@@ -1012,7 +1073,7 @@ body {
                 }
             }
             .description {
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 400;
                 line-height: 24px;
                 letter-spacing: -0.02em;
@@ -1064,6 +1125,10 @@ body {
                 line-height: 24px;
                 letter-spacing: -0.02em;
                 cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: $hover-btn;
+                }
             }
         }
     }
@@ -1072,7 +1137,7 @@ body {
 // call
 
 .call {
-    height: 80vh;
+    height: 570px;
     background-color: $bg;
     position: relative;
     .bg1 {
@@ -1120,6 +1185,10 @@ body {
                 cursor: pointer;
                 z-index: 1;
                 position: absolute;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: $hover-btn;
+                }
             }
         }
         .images {
@@ -1127,6 +1196,8 @@ body {
                 position: absolute;
                 right: 0;
                 bottom: 0;
+                width: 688px;
+                height: 450px;
             }
         }
     }
@@ -1135,6 +1206,8 @@ body {
 // footer
 
 .footer {
+    width: 100%;
+    height: 643px;
     padding: 120px 9%;
     .wrapper-top {
         display: flex;
@@ -1142,7 +1215,7 @@ body {
         border-bottom: 1px solid #cebefe;
 
         .spending {
-            padding-right: 18%;
+            padding-right: 16%;
             .logo {
                 display: flex;
                 align-items: center;
@@ -1193,7 +1266,7 @@ body {
         .product,
         .company,
         .resources {
-            margin-right: 9%;
+            margin-right: 8%;
         }
     }
     .footer-bottom {
