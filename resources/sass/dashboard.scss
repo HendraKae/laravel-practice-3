@@ -9,7 +9,6 @@ html {
     border: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    max-width: 1440px;
 }
 
 body {
@@ -18,19 +17,22 @@ body {
     display: flex;
 }
 
-.navbar {
+.sidebar {
     position: relative;
     top: 0;
     left: 0;
-    width: 286px;
-    height: 1040px;
+    width: 18%;
+    height: 1024px;
     background-color: #fff;
     z-index: 9999;
     padding: 46px 0;
     border-right: 1px solid #f3f5f7;
     .brand {
-        width: 250px;
         text-align: center;
+        width: 95%;
+        img {
+            width: 58%;
+        }
     }
     .nav {
         display: block;
@@ -54,27 +56,41 @@ body {
                     gap: 14px;
                     text-decoration: none;
                     color: #596780;
-                    width: 254px;
+                    width: 90%;
                     height: 55px;
-                    font-size: 18px;
+                    font-size: 15px;
                     font-weight: 500;
                     line-height: 27px;
                     letter-spacing: -0.02em;
                     border-radius: 10px;
                     transition: 0.3s ease;
+                    transition: 0.3s ease;
+                    &:hover {
+                        background-color: rgb(247, 247, 247);
+                    }
                     div {
                         display: flex;
                         align-items: center;
+                        img {
+                            width: 23px;
+                        }
+                    }
+                    .p-darkmode {
+                        position: absolute;
+                        left: 69px;
                     }
                     .toggle {
-                        padding: 0 0 0 25px;
+                        position: absolute;
+                        right: 15px;
                         .img-sun {
                             position: absolute;
-                            right: 23%;
+                            right: 68%;
+                            width: 13px;
                         }
                         .img-month {
                             position: absolute;
-                            right: 11.5%;
+                            right: 14%;
+                            width: 13px;
                         }
                         input[type="checkbox"] {
                             position: relative;
@@ -116,7 +132,7 @@ body {
                 }
             }
             .logout {
-                padding: 150px 0 0 0;
+                padding: 145px 0 0 0;
             }
         }
     }
@@ -125,11 +141,11 @@ body {
 .dashboard {
     position: absolute;
     right: 0;
+    left: 0;
     top: 0;
-    max-width: 1440px;
     .header {
-        padding: 18px 32px;
-        width: 80.2vw;
+        padding: 18px 30px 18px 19.8%;
+        width: 100%;
         height: 80px;
         background-color: #fff;
         display: flex;
@@ -202,9 +218,11 @@ body {
         }
     }
     .statistic {
-        padding: 32px;
+        position: absolute;
+        right: 28%;
+        top: 112px;
         .container {
-            width: 765px;
+            width: 726px;
             height: 338px;
             background-color: #fff;
             border-radius: 10px;
@@ -223,7 +241,7 @@ body {
                                         font-weight: 600;
                                         line-height: 24px;
                                         letter-spacing: -0.02em;
-                                        padding: 24px 24px 24px 46px;
+                                        padding: 24px 0 0 30px;
                                         color: #1a202c;
                                     }
                                     h2 {
@@ -232,11 +250,11 @@ body {
                                         line-height: 21px;
                                         letter-spacing: -0.02em;
                                         color: #1a202c;
-                                        padding: 24px 102px;
+                                        padding: 24px 80px;
                                     }
                                 }
                                 img {
-                                    left: 3%;
+                                    left: 9px;
                                     width: auto;
                                     height: 260px;
                                     position: relative;
@@ -251,7 +269,7 @@ body {
                     top: 13%;
                     color: transparent;
                     background-color: #f6f7f9;
-                    right: 6%;
+                    right: 4%;
                     width: 24px;
                     height: 24px;
                     border-radius: 6px;
@@ -260,20 +278,20 @@ body {
                     }
                 }
                 .btn-prev {
-                    left: 75%;
+                    left: 78%;
                 }
             }
         }
     }
     .balance {
         position: absolute;
-        right: 28px;
-        top: 113px;
-        width: 375px;
+        right: 1.5%;
+        top: 112px;
+        width: 340px;
         height: 265px;
         border-radius: 10px;
         background-color: #fff;
-        padding: 24px 45px;
+        padding: 24px;
 
         .title {
             display: flex;
@@ -349,11 +367,14 @@ body {
         }
     }
     .total {
-        padding: 0px 32px;
+        position: absolute;
+        right: 28%;
+        top: 474px;
+
         .box {
             display: flex;
             justify-content: space-between;
-            width: 765px;
+            width: 726px;
             background-color: #fff;
             border-radius: 10px;
             padding: 24px;
@@ -367,13 +388,12 @@ body {
                     line-height: 24px;
                     letter-spacing: -0.02em;
                     color: #1a202c;
-                    padding: 0 0 19px 30px;
+                    padding: 0 0 19px 0;
                 }
                 div {
                     display: flex;
                     align-items: center;
                     gap: 8px;
-                    padding: 0 0 0 30px;
 
                     h1 {
                         font-size: 32px;
@@ -396,7 +416,7 @@ body {
                     line-height: 15.12px;
                     letter-spacing: -0.02em;
                     color: #90a3bf;
-                    padding: 14px 0 0 30px;
+                    padding: 14px 0 0 0;
                     span {
                         color: #7fb519;
                     }
@@ -410,11 +430,11 @@ body {
                     background-color: #f6f7f9;
                 }
                 .up {
-                    right: -32%;
+                    right: -44%;
                 }
             }
             .expense {
-                padding: 0 109px 0 0;
+                padding: 0 90px 0 24px;
                 border-left: 1px solid #f0f0f0;
                 .desc {
                     span {
@@ -425,10 +445,12 @@ body {
         }
     }
     .history {
-        padding: 32px;
+        position: absolute;
+        top: 666px;
+        right: 28%;
         .container {
             background-color: #fff;
-            width: 765px;
+            width: 726px;
             height: 326px;
             border-radius: 10px;
             .top {
@@ -436,7 +458,7 @@ body {
                 justify-content: space-between;
                 width: 765px;
                 height: 77px;
-                padding: 0 45px;
+                padding: 0 63px 0 24px;
                 align-items: center;
                 border-bottom: 1px solid #f3f5f7;
                 h1 {
@@ -468,7 +490,7 @@ body {
                 position: relative;
                 .transaksi {
                     p {
-                        padding: 10px 45px 7px 45px;
+                        padding: 10px 24px 7px 24px;
                         font-size: 12px;
                         font-weight: 500;
                         line-height: 18px;
@@ -480,13 +502,13 @@ body {
                     }
                     .border {
                         border-bottom: 1px solid #f3f5f7;
-                        margin: 0 45px;
+                        margin: 0 24px;
                     }
                     .daftar {
                         display: flex;
                         align-items: center;
                         gap: 10px;
-                        padding: 13px 45px 13px 45px;
+                        padding: 13px 45px 13px 24px;
                         div {
                             padding: 0.6rem 0.7rem;
                             border-radius: 50%;
@@ -527,7 +549,7 @@ body {
                 .date {
                     position: absolute;
                     top: 4%;
-                    left: 38%;
+                    left: 36%;
                     .top-date {
                         display: flex;
                         gap: 10px;
@@ -562,7 +584,7 @@ body {
                 .amount {
                     position: absolute;
                     top: 4%;
-                    left: 59.5%;
+                    left: 57.5%;
                     .top-amount {
                         display: flex;
                         gap: 10px;
@@ -597,7 +619,7 @@ body {
                 .status {
                     position: absolute;
                     top: 4%;
-                    left: 79%;
+                    left: 77%;
                     .top-amount {
                         display: flex;
                         gap: 10px;
@@ -668,13 +690,13 @@ body {
     }
     .category {
         position: absolute;
-        right: 28px;
-        top: 413px;
-        width: 375px;
+        right: 1.5%;
+        top: 400px;
+        width: 340px;
         height: 595px;
         border-radius: 10px;
         background-color: #fff;
-        padding: 24px 45px;
+        padding: 24px;
 
         .title {
             display: flex;
@@ -766,6 +788,88 @@ body {
                 div {
                     .color {
                         background-color: #a1a9fe;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .sidebar {
+        .nav {
+            ul {
+                li {
+                    a {
+                        .toggle {
+                            .img-sun {
+                                right: 68%;
+                            }
+                            .img-month {
+                                right: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dashboard {
+        .balance {
+            width: 500px;
+        }
+        .category {
+            width: 500px;
+        }
+        .statistic,
+        .total,
+        .history {
+            right: 30%;
+        }
+        .statistic {
+            .container {
+                width: 940px;
+                .slider-container {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .content {
+                                    .text {
+                                        h2 {
+                                            padding: 24px 105px;
+                                        }
+                                    }
+                                    img {
+                                        left: 110px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .total {
+            .box {
+                width: 940px;
+                .income,
+                .expense {
+                    .up {
+                        right: -90%;
+                    }
+                }
+                .expense {
+                    padding: 0 200px 0 24px;
+                }
+            }
+        }
+        .history {
+            .container {
+                width: 940px;
+                .top {
+                    button {
+                        position: absolute;
+                        right: 24px;
                     }
                 }
             }

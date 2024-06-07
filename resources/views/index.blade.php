@@ -11,7 +11,7 @@
 
         @vite(['resources/sass/app.scss'])
 
-        <title>testORDO</title>
+        <title>Landing</title>
     </head>
     <body>
         {{-- navbar --}}
@@ -715,20 +715,20 @@
                     btnTwo2nd.style.color = '#fff'
                 }
 
-        // swiperjs
-        var swiper = new Swiper(".card_slider", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-      });
+            // swiperjs
+            let swiper = new Swiper(".card_slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
         </script>
     </body>
 </html>

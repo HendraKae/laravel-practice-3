@@ -15,7 +15,7 @@
     @vite(['resources/sass/dashboard.scss'])
 </head>
     <body>
-        <section class="navbar">
+        <section class="sidebar">
             <div class="brand">
                 <a href="#"><img src="{{ url('/assets/images/dashboard/brand.png') }}" ></a>
             </div>
@@ -102,7 +102,7 @@
                             <div>
                                 <img src="{{ url('/assets/images/dashboard/briefcase.png') }}" >
                             </div>
-                            <p>Dark Mode</p>
+                            <p class="p-darkmode">Dark Mode</p>
                             <div class="toggle">
                                 <input type="checkbox" />
                                 <div class="img-sun">
