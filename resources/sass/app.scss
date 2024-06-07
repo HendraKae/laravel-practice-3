@@ -255,7 +255,7 @@ body {
     }
     .content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 24px;
         align-items: center;
 
@@ -264,8 +264,8 @@ body {
             width: 384px;
             height: 528px;
             img {
-                width: 364px;
-                height: 364px;
+                width: 100%;
+                height: auto;
             }
             h1 {
                 font-size: 20px;
@@ -411,7 +411,7 @@ body {
         .row {
             display: flex;
             justify-content: center;
-            gap: 173px;
+            gap: 145px;
             padding-bottom: 64px;
             .col {
                 position: relative;
@@ -500,7 +500,7 @@ body {
     .container {
         display: flex;
         justify-content: center;
-        padding: 120px 9%;
+        padding: 120px 0;
         gap: 70px;
         .img-content {
             width: 558px;
@@ -533,7 +533,7 @@ body {
             }
             .content {
                 background-color: $secondary;
-                width: 540px;
+                width: 500px;
                 height: 268px;
                 border-radius: 12px;
                 padding: 25px 0 0 32px;
@@ -542,7 +542,7 @@ body {
                     position: absolute;
                     z-index: 1;
                     top: 23%;
-                    left: 10%;
+                    left: 11%;
                 }
                 .two {
                     z-index: 0;
@@ -576,7 +576,7 @@ body {
                     letter-spacing: -0.02em;
                 }
                 .txtwo {
-                    padding-top: 62px;
+                    padding-top: 63px;
                 }
                 .txthree {
                     padding-top: 63px;
@@ -616,7 +616,7 @@ body {
                 width: 368px;
                 height: 56px;
                 position: relative;
-                border-radius: 30px;
+                border-radius: 100px;
                 background-color: #f3f5f7;
                 display: flex;
                 justify-content: space-between;
@@ -629,7 +629,7 @@ body {
                     width: 169px;
                     height: 100%;
                     background-color: $primary;
-                    border-radius: 30px;
+                    border-radius: 100px;
                     transition: 0.5s ease;
                 }
                 .toggle-btn {
@@ -663,7 +663,7 @@ body {
                 }
                 .row {
                     display: flex;
-                    gap: 14px;
+                    gap: 20px;
                     .text {
                         font-size: 18px;
                         font-weight: 500;
@@ -1009,7 +1009,7 @@ body {
         }
         img {
             top: 25.3%;
-            right: 41%;
+            right: 40%;
             position: absolute;
         }
     }
@@ -1181,7 +1181,7 @@ body {
                 height: 57px;
                 background-color: $primary;
                 color: #fff;
-                border-radius: 30px;
+                border-radius: 50px;
                 cursor: pointer;
                 z-index: 1;
                 position: absolute;
@@ -1292,6 +1292,543 @@ body {
                 line-height: 24px;
                 letter-spacing: -0.02em;
                 color: #596780;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .navbar {
+        height: 130px;
+        .brand {
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
+        .nav {
+            ul {
+                li {
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .nav-button {
+            .btn-login,
+            .btn-demo {
+                font-size: 25px;
+            }
+            .btn-demo {
+                font-size: 20px;
+                padding: 15px 26px;
+            }
+        }
+    }
+    .hero {
+        .bg2,
+        .bg1,
+        .bg3,
+        .bg4 {
+            width: 33.5%;
+        }
+        .main {
+            padding-top: 17%;
+            h1 {
+                font-size: 90px;
+                line-height: 130px;
+            }
+            p {
+                font-size: 28px;
+                line-height: 45px;
+            }
+            .cta {
+                .btn-demo,
+                .btn-pricing {
+                    font-size: 22px;
+                    padding: 17pt 29pt;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+    .benefit {
+        height: 1220px;
+        .header {
+            .text {
+                h2 {
+                    font-size: 27px;
+                    padding-bottom: 9px;
+                }
+                h1 {
+                    font-size: 55px;
+                    line-height: 80px;
+                }
+            }
+            p {
+                font-size: 27px;
+                line-height: 45px;
+            }
+        }
+        .content {
+            .card {
+                padding: 5rem 0;
+                width: 500px;
+                height: 528px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                h1 {
+                    font-size: 25px;
+                    padding: 30px 0 20px 0;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    .benefit2 {
+        height: 1050px;
+        .header {
+            h2 {
+                font-size: 30px;
+            }
+            h1 {
+                font-size: 55px;
+                padding: 20px 0 30px 0;
+            }
+            p {
+                font-size: 26px;
+                line-height: 40px;
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            .benefits {
+                padding-top: 90px;
+                .row {
+                    padding-bottom: 50px;
+
+                    .img {
+                        img {
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+                    .text {
+                        h2 {
+                            font-size: 27px;
+                        }
+                        p {
+                            font-size: 21px;
+                            line-height: 35px;
+                        }
+                    }
+                }
+            }
+            .img-benefit2nd {
+                padding-top: 70px;
+                width: 680px;
+                height: 553px;
+            }
+        }
+    }
+    .work {
+        height: 1070px;
+        .header {
+            padding: 120px 0 90px 0;
+            h2 {
+                font-size: 30px;
+            }
+            h1 {
+                font-size: 55px;
+                padding: 20px 0 30px 0;
+            }
+            p {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+        .content {
+            .row {
+                gap: 200px;
+                padding-bottom: 80px;
+                .col {
+                    .h1 {
+                        font-size: 35px;
+                        padding: 8px 18px;
+                    }
+                    img {
+                        width: 270px;
+                        height: auto;
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .wrapper-btn {
+                .btn-demo,
+                .btn-pricing {
+                    font-size: 20px;
+                    padding: 20px 30px;
+                }
+            }
+        }
+    }
+    .works {
+        height: 920px;
+        .container {
+            gap: 100px;
+            .img-content {
+                width: 730px;
+                height: 680px;
+            }
+            .wrapper {
+                .header {
+                    padding-top: 10px;
+                    h2 {
+                        font-size: 30px;
+                    }
+                    h1 {
+                        font-size: 50px;
+                    }
+                    p {
+                        font-size: 26px;
+                        line-height: 38px;
+                    }
+                }
+                .content {
+                    width: 690px;
+                    height: 380px;
+                    padding: 30px 0 0 38px;
+                    h1 {
+                        font-size: 35px;
+                        font-weight: 600;
+                        padding: 11px 23px;
+                    }
+                    .line {
+                        top: 26%;
+                        left: 10%;
+                        width: 3px;
+                    }
+                    .text {
+                        padding: 26px 0 0 100px;
+                        font-size: 26px;
+                        font-weight: 500;
+                        color: #fff;
+                        letter-spacing: -0.02em;
+                    }
+                    .txtwo {
+                        padding-top: 87px;
+                    }
+                    .txthree {
+                        padding-top: 89px;
+                    }
+                }
+            }
+        }
+    }
+    .stories,
+    .stories2nd {
+        height: 1050px;
+        .header {
+            h2 {
+                font-size: 30px;
+                padding-bottom: 10px;
+            }
+            h1 {
+                font-size: 50px;
+                line-height: 70px;
+            }
+        }
+        .content {
+            .wrapper {
+                .advantages {
+                    padding-top: 20px;
+                    h1 {
+                        font-size: 30px;
+                    }
+                    .row {
+                        img {
+                            width: 35px;
+                        }
+                        .text {
+                            font-size: 24px;
+                            line-height: 38px;
+                        }
+                    }
+                }
+            }
+            .img-stories {
+                img {
+                    padding: 64px 0 0 0;
+                    width: 600px;
+                }
+            }
+        }
+    }
+    .testimonial {
+        height: 1300px;
+        .header {
+            padding: 120px 0 90px 0;
+            h2 {
+                font-size: 30px;
+            }
+            h1 {
+                font-size: 55px;
+                padding: 20px 0 30px 0;
+            }
+            p {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+        .slider-container {
+            .container {
+                height: 710px;
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            border-radius: 30px;
+                            padding: 40px 50px;
+                            .card {
+                                .text-wrapper {
+                                    h2 {
+                                        font-size: 23px;
+                                        line-height: 45px;
+                                        letter-spacing: -0.03em;
+                                    }
+                                    p {
+                                        font-size: 21px;
+                                        line-height: 40px;
+                                        padding: 20px 0 45px 0;
+                                    }
+                                }
+                                .img-content {
+                                    .card-image {
+                                        img {
+                                            width: 80px;
+                                        }
+                                        .text-wrapper {
+                                            h1 {
+                                                font-size: 20px;
+                                            }
+                                            p {
+                                                font-size: 18px;
+                                                bottom: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .dua {
+                                .text-wrapper {
+                                    padding: 0px 0 40px 0;
+                                }
+                                .img-content {
+                                    .card-image {
+                                        .text-wrapper {
+                                            h1 {
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-next,
+                .btn-prev {
+                    width: 75px;
+                    height: 75px;
+                    background-color: #1a202c;
+                    color: #1a202c;
+                    border-radius: 50%;
+                    top: 90%;
+                    transition: 0.3s ease;
+                    img {
+                        position: absolute;
+                        width: 30px;
+                    }
+
+                    &:hover {
+                        background-color: $primary;
+                        color: $primary;
+                        box-shadow: 4px 8px 20px 1px #246bfd40;
+                    }
+                }
+                .btn-next {
+                    right: 44%;
+                }
+                .btn-prev {
+                    left: 44%;
+                }
+            }
+        }
+    }
+    .pricing {
+        height: 1450px;
+        .header {
+            h2 {
+                font-size: 55px;
+            }
+            p {
+                font-size: 27px;
+            }
+            img {
+                top: 24%;
+                right: 43%;
+            }
+        }
+        .content {
+            .container-free,
+            .container-pro,
+            .container-ultimate {
+                width: 500px;
+                height: 900px;
+                padding: 40px;
+                border-radius: 20px;
+                .title {
+                    img {
+                        width: 40px;
+                    }
+                    h1 {
+                        font-size: 35px;
+                    }
+                }
+                p {
+                    font-size: 22px;
+                }
+                .price {
+                    padding: 35px 0;
+                    h1 {
+                        font-size: 55px;
+                    }
+                    p {
+                        padding-bottom: 1px;
+                        font-size: 22px;
+                    }
+                }
+                .description {
+                    font-size: 19px;
+                    line-height: 32px;
+                }
+                .benefit-featur {
+                    gap: 15px;
+                    padding-bottom: 10px;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                    h1 {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                }
+                .btn {
+                    padding-top: 50px;
+                    button {
+                        font-size: 20px;
+                        padding: 20px 0;
+                        &:hover {
+                            background-color: $hover-btn;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .call {
+        height: 700px;
+        .container {
+            .title-description {
+                h2 {
+                    font-size: 30px;
+                    line-height: 45px;
+                }
+                h1 {
+                    font-size: 55px;
+                    line-height: 80px;
+                }
+                p {
+                    font-size: 27px;
+                    line-height: 43px;
+                    padding-bottom: 50px;
+                }
+                button {
+                    font-size: 22px;
+                    width: 257px;
+                    height: 70px;
+                }
+            }
+            .images {
+                img {
+                    width: 900px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .footer {
+        height: 783px;
+        .wrapper-top {
+            .spending {
+                .logo {
+                    gap: 15px;
+                    img {
+                        width: 30px;
+                    }
+                    h1 {
+                        font-size: 33px;
+                    }
+                }
+                p {
+                    font-size: 22px;
+                }
+            }
+            .product,
+            .company,
+            .resources,
+            .follow {
+                h1 {
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+                ul {
+                    padding-top: 10px;
+                    li {
+                        margin: 2.5rem 0 0 0;
+                        a {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .product,
+            .company,
+            .resources {
+                margin-right: 9%;
+                margin-bottom: 2%;
+            }
+        }
+        .footer-bottom {
+            padding-top: 50px;
+            .prifacy {
+                font-size: 24px;
+            }
+            .copyright {
+                a {
+                    font-size: 21px;
+                }
             }
         }
     }

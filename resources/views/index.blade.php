@@ -496,7 +496,9 @@
                         <img src="{{ url('/assets/images/landing/close-circle1.png') }}" />
                         <h1>100+ integrations</h1>
                     </div>
-                    <button>Get your Free Plan</button>
+                    <div class="btn">
+                        <button>Get your Free Plan</button>
+                    </div>
                 </div>
                 <div class="container-pro">
                     <div class="title">
@@ -535,7 +537,9 @@
                         <img src="{{ url('/assets/images/landing/tick.png') }}" />
                         <h1>100+ integrations</h1>
                     </div>
-                    <button>Get Started</button>
+                    <div class="btn">
+                        <button>Get Started</button>
+                    </div>
                 </div>
                 <div class="container-ultimate">
                     <div class="title">
@@ -574,7 +578,9 @@
                         <img src="{{ url('/assets/images/landing/tick.png') }}" />
                         <h1>Advanced security</h1>
                     </div>
-                    <button>Get Started</button>
+                    <div class="btn">
+                        <button>Get Started</button>
+                    </div>
                 </div>
             </div>
         </section>
