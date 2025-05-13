@@ -11,6 +11,12 @@
 
 This website is a Frontend project developed using Laravel 11 and SASS. With Blade and SCSS, the website contains hero sections, benefits, how it works, productivity, User words, pricing, downloads, footer and there is also a dashboard section. This website is a test from FE.
 
+<p>
+🎯 A static landing page built based on a fixed-size design using [HTML/CSS | Sass | Laravel Blade.]. <br />
+⚠️ This project is non-responsive, as the original design was not made for different screen sizes. <br/>
+🛠️ Created for frontend layout and slicing practice purposes.
+</p>
+
 Here are a few tips on how to use this project :
 
 -   $ git clone https://github.com/HendraKae/Ordoapptest.git
